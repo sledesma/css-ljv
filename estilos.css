@@ -1,0 +1,115 @@
+/*
+MAQUETACIÓN POR BLOQUES
+margin
+padding
+display: block
+float
+width
+height
+*/
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#menu {
+    margin-left: auto;
+    margin-right: auto;
+    height: 38px;
+}
+
+#menu a {
+    color: black;
+    text-decoration: none;
+    margin: 0;
+    padding: 10px;
+    float: right;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+/* MAQUETACION POR FLEX */
+main { /*CONTENEDOR FLEX*/
+    display: flex;
+    width: 96%;
+    padding: 2%;
+
+}
+
+main .nivel-1 { /*CONTENIDO FLEX*/
+    height: 500px;
+    width: 98%;
+    margin: 1%;
+}
+
+main .nivel-2 {
+    width: 94%;
+    height: 98%;
+    padding: 1% 0px;
+}
+
+main .nivel-3 {
+    width: 45%;
+    height: 90%;
+    margin-top: 1%;
+    padding: 1%;
+}
+
+.vertical {
+    flex-direction: column;
+}
+
+.contenedor {
+    display: flex;
+}
+
+.con-borde {
+    border: 1px solid black;
+}
+
+.espacio-interior {
+    justify-content: space-between;
+}
+
+#remeras { background-image: url(img/remeras.jpg); }
+#accesorios { background-image: url(img/accesorios.jpeg); }
+#pantalones { background-image: url(img/pantalones.jpg); }
+#shorts { background-image: url(img/shorts.jpg); }
+
+#remeras,
+#accesorios,
+#pantalones,
+#shorts {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.caja-texto {
+    width: 50%;
+    height: 50%;
+    padding: 2%;
+    background-color: white;
+    opacity: 0.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: opacity 0.2s;
+}
+
+.caja-texto:hover {
+    opacity: 1;
+    cursor: pointer;
+}
