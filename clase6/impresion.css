@@ -1,0 +1,44 @@
+
+        /* Diseño para impresión */
+        /*
+        Si ... estoy en este "medio" (dispositivo), entonces
+        priorizo estas reglas de estilo */
+        @media print  {
+            body {
+                font-size: 24px;
+            }
+            
+            nav {
+                display: none;
+            }
+
+            main {
+                width: 100%;
+            }
+
+            #modulos {
+                width: 100%;
+            }
+        
+            .grilla {
+                justify-content: start;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .grilla .tarjeta {
+                -moz-box-shadow: none;
+                -webkit-box-shadow: none;
+                box-shadow: none;
+                border: 1px solid black;
+                width: 40%;
+            }
+
+            .grilla .desactivado {
+                display: none;
+            }
+
+            #modulos h1.titulo::before {
+                content: "Módulos activados";
+            }
+        }

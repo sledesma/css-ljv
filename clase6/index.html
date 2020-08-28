@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="principal.css">
+    <link rel="stylesheet" href="impresion.css">
+    <style>
+        /* Diseño adaptable */
+        /*
+        Breakpoints:
+            576
+            768
+            992
+            1200
+        */
+        @media screen and (max-width: 575px) {
+            .grilla .tarjeta {
+                width: 100%;
+            }
+
+            nav {
+                float: none;
+                width: 100%;
+                height: auto;
+            }
+            main {
+                float: none;
+                width: 100%;
+            }
+        }
+
+        @media screen and (min-width: 576px) and (max-width: 894px) {
+
+            .grilla .tarjeta {
+                width: 100%;
+            }
+        }
+
+        @media screen and (min-width: 992px) and (max-width: 1366px) {
+
+            .grilla .tarjeta {
+                width: 45%;
+                margin-top: 10px;
+                margin-left: 10px;
+            }
+        }
+
+
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Ventas</a></li>
+        <li><a href="#">RRHH</a></li>
+        <li><a href="#">I y D</a></li>
+        <li><a href="#">Soporte</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section id="modulos">
+        <h1 class="titulo"></h1>
+
+        <div class="grilla">
+          <div class="tarjeta">
+            <div class="titulo">Ventas</div>
+            <div class="descripcion">Descripcion</div>
+          </div>
+
+          <div class="tarjeta">
+            <div class="titulo">RRHH</div>
+            <div class="descripcion">Descripcion</div>
+          </div>
+
+          <div class="tarjeta">
+            <div class="titulo">I y D</div>
+            <div class="descripcion">Descripcion</div>
+          </div>
+
+          <div class="tarjeta">
+            <div class="titulo">Soporte</div>
+            <div class="descripcion">Descripcion</div>
+          </div>
+
+          <div class="tarjeta desactivado">
+            <div class="titulo">Sistemas</div>
+            <div class="descripcion">Descripcion</div>
+          </div>
+
+          <div class="tarjeta desactivado">
+            <div class="titulo">Finanzas</div>
+            <div class="descripcion">Descripcion</div>
+          </div>
+
+          <div class="tarjeta desactivado">
+            <div class="titulo">Administación</div>
+            <div class="descripcion">Descripcion</div>
+          </div>
+
+          <div class="tarjeta desactivado">
+            <div class="titulo">Gestión de talento</div>
+            <div class="descripcion">Descripcion</div>
+          </div>
+
+          <div class="tarjeta desactivado">
+            <div class="titulo">Contacto</div>
+            <div class="descripcion">Descripcion</div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

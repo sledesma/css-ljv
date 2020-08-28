@@ -1,0 +1,82 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+  background-color: #34c6eb;
+  width: 25%;
+  height: 100vh;
+  float: left;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  color: black;
+  text-decoration: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 25px;
+
+  transition: all 0.1s;
+}
+
+nav ul li a:hover {
+  background-color: #4272f5;
+}
+
+main {
+  width: 75%;
+  height: 100vh;
+  float: right;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.grilla {
+  width: 100%;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.grilla .tarjeta {
+  width: 300px;
+  height: 150px;
+  margin: 10px;
+  -webkit-box-shadow: 10px 10px 32px -9px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 32px -9px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 32px -9px rgba(0, 0, 0, 0.75);
+
+  box-sizing: border-box;
+  padding: 10px;
+
+}
+
+.grilla .desactivado {
+  background-color: #CCC;
+}
+
+.grilla .tarjeta .titulo {
+    text-align: center;
+}
+
+.grilla .tarjeta .descripcion {
+    margin-top: 10px;
+}
+
+#modulos h1.titulo::before {
+  content: "Módulos";
+}
